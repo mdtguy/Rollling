@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>منشئ الفواتير</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>منشئ الفاتورة على صورة</h1>
+
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <div class="form-group">
+      <input type="text" id="customerName" placeholder="اسم الزبون">
+      <input type="text" id="itemType" placeholder="نوع المادة">
+      <input type="number" id="quantity" placeholder="الكمية">
+      <input type="number" id="price" placeholder="السعر">
+      <input type="date" id="invoiceDate" placeholder="تاريخ الفاتورة">
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <a id="downloadBtn" download="voucher.png" style="display: none;">تحميل الصورة</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
